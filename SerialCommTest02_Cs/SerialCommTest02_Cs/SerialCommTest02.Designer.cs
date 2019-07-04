@@ -59,10 +59,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartSpeed = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labCurrentV = new System.Windows.Forms.Label();
             this.labMyComd = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSpeed)).BeginInit();
             this.SuspendLayout();
             // 
             // btnScanPort
@@ -303,22 +303,22 @@
             this.label12.Text = "---------------------------------------------------------------------------------" +
     "------------------------";
             // 
-            // chart1
+            // chartSpeed
             // 
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.chartSpeed.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(12, 218);
-            this.chart1.Name = "chart1";
+            this.chartSpeed.Legends.Add(legend1);
+            this.chartSpeed.Location = new System.Drawing.Point(12, 218);
+            this.chartSpeed.Name = "chartSpeed";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(637, 294);
-            this.chart1.TabIndex = 26;
-            this.chart1.Text = "chart1";
+            this.chartSpeed.Series.Add(series1);
+            this.chartSpeed.Size = new System.Drawing.Size(637, 294);
+            this.chartSpeed.TabIndex = 26;
+            this.chartSpeed.Text = "Motor Speed";
             // 
             // labCurrentV
             // 
@@ -345,7 +345,7 @@
             this.ClientSize = new System.Drawing.Size(657, 519);
             this.Controls.Add(this.labMyComd);
             this.Controls.Add(this.labCurrentV);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.chartSpeed);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
@@ -374,7 +374,7 @@
             this.Name = "SerialCommTest02";
             this.Text = "Serial Communication Send and Receive";
             this.Load += new System.EventHandler(this.SerialCommTest02_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSpeed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,7 +408,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSpeed;
         private System.Windows.Forms.Label labCurrentV;
         private System.Windows.Forms.Label labMyComd;
     }

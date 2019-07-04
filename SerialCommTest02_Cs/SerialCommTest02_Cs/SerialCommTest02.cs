@@ -102,6 +102,10 @@ namespace SerialCommTest02_Cs
                 {
                     speed = myStr.Substring(5, Int32.Parse(length) - 6);
                     labCurrentV.Text = "Current Speed: " + speed;
+                    //print motor speed into chart
+                    this.chartSpeed.Series["Series1"].Points.AddXY(i, double.Parse(speed));
+                    i++;
+                    this.chartSpeed.ChartAreas["ChartArea1"].AxisX.Minimum = i - 300;
                 }
             }
             
