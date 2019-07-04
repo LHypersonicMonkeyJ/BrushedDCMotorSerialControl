@@ -33,6 +33,10 @@ namespace SerialCommTest02_Cs
             btnDiscon.Enabled = false;
             btnDiscon.SendToBack();
 
+            btnMstart.Enabled = false;
+            btnMstop.Enabled = false;
+            btnSend.Enabled = false;
+
             cmbBaud.SelectedItem = "9600";
             DoubleBuffered = true;
             myStr = "0";
@@ -71,6 +75,8 @@ namespace SerialCommTest02_Cs
 
             btnDiscon.Enabled = true;
             btnDiscon.BringToFront();
+
+            btnSend.Enabled = true;
         }
 
         private void btnDiscon_Click(object sender, EventArgs e)
@@ -90,6 +96,8 @@ namespace SerialCommTest02_Cs
             mySerialPort.WriteLine("vs_kp" + txbKp.Text);
             mySerialPort.WriteLine("vs_ki" + txbKi.Text);
             mySerialPort.WriteLine("vs_kd" + txbKd.Text);
+
+            btnMstart.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -103,7 +111,7 @@ namespace SerialCommTest02_Cs
                     speed = myStr.Substring(5, Int32.Parse(length) - 6);
                     labCurrentV.Text = "Current Speed: " + speed;
                     //print motor speed into chart
-                    this.chartSpeed.Series["Series1"].Points.AddXY(i, double.Parse(speed));
+                    this.chartSpeed.Series["Speed"].Points.AddXY(i, double.Parse(speed));
                     i++;
                     this.chartSpeed.ChartAreas["ChartArea1"].AxisX.Minimum = i - 300;
                 }
@@ -120,11 +128,16 @@ namespace SerialCommTest02_Cs
         {
             mySerialPort.WriteLine("vs_start");         //start motor
             output = mySerialPort.ToString();
+
+            btnMstop.Enabled = true;
+            btnMstart.Enabled = false;
         }
 
         private void btnMstop_Click(object sender, EventArgs e)
         {
             mySerialPort.WriteLine("vs_stop");          //stop motor
+
+            btnMstart.Enabled = true;
         }
     }
 }

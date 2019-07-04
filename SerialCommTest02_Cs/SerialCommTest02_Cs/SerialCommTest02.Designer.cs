@@ -314,7 +314,7 @@
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Speed";
             this.chartSpeed.Series.Add(series1);
             this.chartSpeed.Size = new System.Drawing.Size(637, 294);
             this.chartSpeed.TabIndex = 26;
