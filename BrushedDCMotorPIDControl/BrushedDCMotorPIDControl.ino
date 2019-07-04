@@ -18,9 +18,9 @@ bool motor_start = false;
 //***************************Encoder and Motor Control**********************************
 const uint8_t encoder_A = 2;
 const uint8_t encoder_B = 3;
-const uint8_t motor_IN1 = 12;
-const uint8_t motor_IN2 = 13;
-const uint8_t motor_ENA = 7;
+const uint8_t motor_IN1 = 4;
+const uint8_t motor_IN2 = 5;
+const uint8_t motor_ENA = 6;
 const uint16_t t1_comp = 6250;  // 16 bit timer counter = maximum of 65,535 counts
                                 // pre-scaler 256 and 100ms interrupt -> 0.1*16e6/256 = 6250
 volatile long counter = 0;      //Encoder Counter    
@@ -32,7 +32,7 @@ double set_speed = 0;           //Set speed
 double e_speed = 0;             //Error of speed = set_speed - pv_speed
 double e_speed_pre = 0;         //last error of speed
 double e_speed_sum = 0;         //sum error of speed
-double pwm_pulse = 0;           //PWM control
+double pwm_pulse = 0;           //PWM controls
 double kp = 0;
 double ki = 0;
 double kd = 0;
@@ -50,15 +50,16 @@ void setup() {
   timerInterruptSetup();
   interrupts();
   sei(); //Enable global interrupts
-  //while (!Serial) {
-  //  ; // wait for serial port to connect. Needed for native USB port only
-  //}
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
 }
 
 void loop() {
   if (stringComplete) {
     // clear the string when COM receiving is completed
     mySt = "";  //Note: in code below, mySt will not become blank, mySt is blank until '\n' is received
+    stringComplete = false;
   }
 
   //Receive command from Visual Studio
@@ -116,7 +117,7 @@ void timerInterruptSetup()
 
 //*********Timer ISR tick every 100ms*********
 ISR(TIMER1_COMPA_vect) {
-  pv_speed = counter*5/3; //calculate motor speed, unit is rpm counter/360*60/0.1
+  pv_speed = counter*5/3; //calculate motor speed, unit is rpm counter/256*60/0.1
   counter = 0;
   //print out speed to serial when no new instruction
   if (Serial.available() <= 0) {
@@ -173,21 +174,21 @@ void CWspin()
 void CCWspin()
 {
   digitalWrite(motor_IN1, LOW);
-  digitalWrite(motor_IN1, HIGH);
+  digitalWrite(motor_IN2, HIGH);
   //delay(50);
 }
 
 void breakNow()
 {
-  digitalWrite(motor_IN1, HIGH);
-  digitalWrite(motor_IN1, HIGH);
-  delay(200);
+  digitalWrite(motor_IN1, LOW);
+  digitalWrite(motor_IN2, LOW);
+  //delay(200);
 }
 
 void floatNow()
 {
-  digitalWrite(motor_IN1, LOW);
-  digitalWrite(motor_IN2, LOW);
+  digitalWrite(motor_IN1, HIGH);
+  digitalWrite(motor_IN2, HIGH);
   //delay(50);
 }
 

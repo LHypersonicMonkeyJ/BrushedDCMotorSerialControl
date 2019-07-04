@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialCommTest02_Cs", "SerialCommTest02_Cs\SerialCommTest02_Cs.csproj", "{D9A97AE0-FB3E-4A83-9293-273E9E5B66E1}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BCM Controller", "BCM Controller\BCM Controller.vdproj", "{5981BA4C-616A-49D2-9DB2-9C1B2B062C0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{D9A97AE0-FB3E-4A83-9293-273E9E5B66E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9A97AE0-FB3E-4A83-9293-273E9E5B66E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A97AE0-FB3E-4A83-9293-273E9E5B66E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5981BA4C-616A-49D2-9DB2-9C1B2B062C0E}.Debug|Any CPU.ActiveCfg = Debug
+		{5981BA4C-616A-49D2-9DB2-9C1B2B062C0E}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

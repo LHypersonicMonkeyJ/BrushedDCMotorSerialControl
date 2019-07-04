@@ -8,3 +8,13 @@ D:\Project\Brushed DC Motor Control\SerialCommTest02_Cs\SerialCommTest02_Cs\bin\
 D:\Project\Brushed DC Motor Control\SerialCommTest02_Cs\SerialCommTest02_Cs\bin\Debug\SerialCommTest02_Cs.pdb
 D:\Project\Brushed DC Motor Control\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.exe
 D:\Project\Brushed DC Motor Control\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.pdb
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\bin\Debug\SerialCommTest02_Cs.exe.config
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\bin\Debug\SerialCommTest02_Cs.exe
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\bin\Debug\SerialCommTest02_Cs.pdb
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.csprojAssemblyReference.cache
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.SerialCommTest02.resources
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.Properties.Resources.resources
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.csproj.GenerateResource.cache
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.csproj.CoreCompileInputs.cache
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.exe
+D:\Project\BrushedDCMotorSerialControl\SerialCommTest02_Cs\SerialCommTest02_Cs\obj\Debug\SerialCommTest02_Cs.pdb
