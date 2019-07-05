@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_3EA8DAF4C8924CD9B0C854CED59DD3E8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_73542F0DDDE04054B2725E83D4534445"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -62,6 +68,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
         "Release"
@@ -86,6 +100,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -116,6 +138,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3EA8DAF4C8924CD9B0C854CED59DD3E8"
+            {
+            "SourcePath" = "8:D:\\C# Programming\\Icons\\Iconleak-Cerulean-Link.ico"
+            "TargetName" = "8:Iconleak-Cerulean-Link.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_4209F495CB6842379A8EEAF652D43982"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9AD8CBB7D86ECCD44382F722F30B6CCD"
             {
             "AssemblyRegister" = "3:1"
@@ -204,7 +246,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BCM Controller"
         "ProductCode" = "8:{3407FBCE-C38D-42B4-A7FC-1F24792CA14C}"
-        "PackageCode" = "8:{CD196AD1-0BD7-4F51-A634-98CE0F127B6A}"
+        "PackageCode" = "8:{CD83169C-7DDA-41F5-9EAA-D8C3573CE039}"
         "UpgradeCode" = "8:{53B77527-6536-4776-BC94-7EA681496C18}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -212,12 +254,12 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:longji.yan@outlook.com"
+        "Manufacturer" = "8:LongjiDiscovery Manufacturer"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:BCM Controller"
+        "Title" = "8:BCM Controller Setup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:longji.yan@outlook.com"
+        "ARPCONTACT" = "8:LongjiDiscovery"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -324,6 +366,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1DC3D7BCE4424721856D2F1D8937ACCB"
+            {
+            "Name" = "8:BDC Motor Control Via Serial"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_73542F0DDDE04054B2725E83D4534445"
+            "Folder" = "8:_E9018F1F40104407AA3BA760187F2574"
+            "WorkingFolder" = "8:_4209F495CB6842379A8EEAF652D43982"
+            "Icon" = "8:_3EA8DAF4C8924CD9B0C854CED59DD3E8"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_373848E6CED44DCEBEED5EF0524111C4"
+            {
+            "Name" = "8:BDC Motor Control Via Serial"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_73542F0DDDE04054B2725E83D4534445"
+            "Folder" = "8:_1A0B0F1FD1E54D9084673C9C754C7D16"
+            "WorkingFolder" = "8:_4209F495CB6842379A8EEAF652D43982"
+            "Icon" = "8:_3EA8DAF4C8924CD9B0C854CED59DD3E8"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -725,7 +795,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_73542F0DDDE04054B2725E83D4534445"
             {
-            "SourcePath" = "8:..\\SerialCommTest02_Cs\\obj\\Debug\\SerialCommTest02_Cs.exe"
+            "SourcePath" = "8:..\\SerialCommTest02_Cs\\obj\\Debug\\BDCMotorControlViaSerial_Cs.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_4209F495CB6842379A8EEAF652D43982"

@@ -1,0 +1,10 @@
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\bin\Release\BDCMotorControlViaSerial_Cs.exe.config
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\bin\Release\BDCMotorControlViaSerial_Cs.exe
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\bin\Release\BDCMotorControlViaSerial_Cs.pdb
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\obj\Release\BDC Motor Control Via Serial.csprojAssemblyReference.cache
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\obj\Release\BDCMotorControlViaSerial.BDCMotorControl.resources
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\obj\Release\BDCMotorControlViaSerial_Cs.Properties.Resources.resources
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\obj\Release\BDC Motor Control Via Serial.csproj.GenerateResource.cache
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\obj\Release\BDC Motor Control Via Serial.csproj.CoreCompileInputs.cache
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\obj\Release\BDCMotorControlViaSerial_Cs.exe
+D:\Project\BrushedDCMotorSerialControl\BDC Motor Control Via Serial_Cs\SerialCommTest02_Cs\obj\Release\BDCMotorControlViaSerial_Cs.pdb
