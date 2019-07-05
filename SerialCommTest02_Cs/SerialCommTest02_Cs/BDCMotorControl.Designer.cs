@@ -1,6 +1,6 @@
-﻿namespace SerialCommTest02_Cs
+﻿namespace BDCMotorControlViaSerial
 {
-    partial class SerialCommTest02
+    partial class BDCMotorControl
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SerialCommTest02));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BDCMotorControl));
             this.btnScanPort = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txbSpeed = new System.Windows.Forms.TextBox();

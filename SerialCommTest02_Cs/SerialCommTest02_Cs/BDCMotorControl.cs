@@ -11,9 +11,9 @@ using System.Windows.Forms;
 using System.IO.Ports;
 using System.Threading;
 
-namespace SerialCommTest02_Cs
+namespace BDCMotorControlViaSerial
 {
-    public partial class SerialCommTest02 : Form
+    public partial class BDCMotorControl : Form
     {
         private string myStr;
         private string output;
@@ -21,7 +21,7 @@ namespace SerialCommTest02_Cs
         private bool motorStatus = false;
         int i;
 
-        public SerialCommTest02()
+        public BDCMotorControl()
         {
             InitializeComponent();
         }

@@ -50,16 +50,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SerialCommTest02.cs">
+    <Compile Include="BDCMotorControl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SerialCommTest02.Designer.cs">
-      <DependentUpon>SerialCommTest02.cs</DependentUpon>
+    <Compile Include="BDCMotorControl.Designer.cs">
+      <DependentUpon>BDCMotorControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SerialCommTest02.resx">
-      <DependentUpon>SerialCommTest02.cs</DependentUpon>
+    <EmbeddedResource Include="BDCMotorControl.resx">
+      <DependentUpon>BDCMotorControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

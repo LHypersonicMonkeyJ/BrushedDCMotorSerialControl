@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SerialCommTest02_Cs.Properties
+namespace BDCMotorControlViaSerial.Properties
 {
 
 
