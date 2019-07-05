@@ -373,6 +373,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SerialCommTest02";
             this.Text = "Serial Communication Send and Receive";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SerialCommTest02_FormClosing);
             this.Load += new System.EventHandler(this.SerialCommTest02_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartSpeed)).EndInit();
             this.ResumeLayout(false);

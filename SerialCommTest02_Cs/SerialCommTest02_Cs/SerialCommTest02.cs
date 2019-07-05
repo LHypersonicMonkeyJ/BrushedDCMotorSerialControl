@@ -18,6 +18,7 @@ namespace SerialCommTest02_Cs
         private string myStr;
         private string output;
         private string speed;
+        private bool motorStatus = false;
         int i;
 
         public SerialCommTest02()
@@ -131,6 +132,7 @@ namespace SerialCommTest02_Cs
 
             btnMstop.Enabled = true;
             btnMstart.Enabled = false;
+            motorStatus = true;
         }
 
         private void btnMstop_Click(object sender, EventArgs e)
@@ -138,6 +140,19 @@ namespace SerialCommTest02_Cs
             mySerialPort.WriteLine("vs_stop");          //stop motor
 
             btnMstart.Enabled = true;
+            motorStatus = false;
+        }
+
+        private void SerialCommTest02_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (motorStatus)
+            {
+                if (MessageBox.Show("Please make sure to stop the motor before you shut down the program!", "My Application", 
+                    MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }
