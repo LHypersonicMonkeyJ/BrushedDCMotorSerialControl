@@ -21,7 +21,8 @@ const uint8_t encoder_B = 3;
 const uint8_t motor_IN1 = 4;
 const uint8_t motor_IN2 = 5;
 const uint8_t motor_ENA = 6;
-const uint16_t t1_comp = 6250;  // 16 bit timer counter = maximum of 65,535 counts
+const uint16_t t1_comp = 1250;  // 16 bit timer counter = maximum of 65,535 counts
+                                // This is now 20ms interrupt
                                 // pre-scaler 256 and 100ms interrupt -> 0.1*16e6/256 = 6250
 volatile long counter = 0;      //Encoder Counter    
 bool m_direction;                           
@@ -36,6 +37,7 @@ double pwm_pulse = 0;           //PWM controls
 double kp = 0;
 double ki = 0;
 double kd = 0;
+double temp = 0;
 
 //***************************Main**********************************    
 void setup() {
@@ -115,9 +117,10 @@ void timerInterruptSetup()
   TIMSK1 |= (1<<OCIE1A); // Enable Timer1 compare interrupt
 }
 
-//*********Timer ISR tick every 100ms*********
+//*********Timer ISR tick every 20ms*********
 ISR(TIMER1_COMPA_vect) {
-  pv_speed = counter*5/3; //calculate motor speed, unit is rpm counter/256*60/0.1
+  pv_speed = counter*375/32;   //NOw this is counter/256*60/0.02 = 
+                            //calculate motor speed, unit is rpm counter/256*60/0.1
   counter = 0;
   //print out speed to serial when no new instruction
   if (Serial.available() <= 0) {
@@ -131,14 +134,16 @@ ISR(TIMER1_COMPA_vect) {
     pwm_pulse = e_speed*kp + e_speed_sum*ki + (e_speed - e_speed_pre)*kd;
     e_speed_pre = e_speed;
     e_speed_sum += e_speed; //sum of error
-    if (e_speed_sum > 4000) e_speed_sum = 4000;
-    if (e_speed_sum < -4000) e_speed_sum = -4000;
+    if (e_speed_sum > 6000) e_speed_sum = 6000;
+    if (e_speed_sum < -6000) e_speed_sum = -6000;
   }
   else {
     e_speed = 0;
     e_speed_pre = 0;
     e_speed_sum = 0;
     pwm_pulse = 0;
+    pv_speed = 0;
+    //set_speed = 0;
   }
 
   //-----------Update New Speed--------
